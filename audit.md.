@@ -1,0 +1,131 @@
+README Audit: factorial.py
+Overall result: Most claims are supported by the code. A few claims describe repository setup or execution instructions that cannot be verified from the Python code alone.
+No.	README claim	Verdict	Evidence
+1	The repository contains a beginner-friendly factorial program.	Supported	The code uses basic Python concepts: variables, integer input, a for loop, multiplication, and print(). The repository's beginner-friendly nature is a description rather than a directly verifiable property.
+2	The program calculates the factorial of a number entered by the user.	Supported	num = int(input("Enter a number: ")) accepts an integer, and the loop calculates the product.
+3	The program uses a for loop to multiply integers from 1 to the entered number.	Supported	for i in range(1, num + 1): iterates over integers from 1 through num for positive inputs.
+4	The program displays the calculated factorial.	Supported	print("Factorial =", fact) displays the result.
+5	Python must be installed to run the program.	Supported	The code is Python source code and requires a Python interpreter to execute.
+6	The repository can be downloaded or cloned.	Not Supported	The code does not establish whether a repository exists online or whether it can be downloaded or cloned.
+7	The file is named factorial.py.	Not Supported	The provided code does not specify its filename. The filename is stated in the README but cannot be verified from the code alone.
+8	The command python factorial.py runs the program.	Supported	This is a standard way to run a Python script, provided Python is installed, the filename is correct, and the command is available.
+9	The command python3 factorial.py can run the program.	Supported	This is also a standard Python execution command on systems where python3 is available.
+10	The program prompts the user to enter a number.	Supported	input("Enter a number: ") displays the prompt.
+11	The project structure contains only factorial.py.	Not Supported	The supplied code cannot establish which other files or folders exist in the repository.
+12	The program uses input() and int() to take integer input.	Supported	num = int(input("Enter a number: ")) uses both functions.
+13	The program uses a for loop with range() to repeat a calculation.	Supported	for i in range(1, num + 1): repeats the multiplication for each value in the range.
+14	The program updates a variable during each iteration.	Supported	fact = fact * i updates fact on every iteration.
+15	The program calculates factorial using multiplication.	Supported	fact starts at 1 and is multiplied by each integer in the loop.
+16	The program displays the result using print().	Supported	print("Factorial =", fact) prints the result.
+17	The factorial of a non-negative integer is the product of all positive integers less than or equal to it.	Supported	This is the standard mathematical definition of factorial. The code implements the definition for non-negative integer inputs.
+18	5! = 120.	Supported	The loop multiplies \(1 \times 2 \times 3 \times 4 \times 5 = 120\).
+19	3! = 6.	Supported	The loop multiplies \(1 \times 2 \times 3 = 6\).
+20	0! = 1.	Supported	For input 0, range(1, 1) is empty, so fact remains 1.
+21	The programming language is Python.	Supported	The code uses Python syntax, including input(), int(), range(), and print().
+22	No external libraries are required by the provided code.	Supported	The code uses built-in Python functions and does not import any modules.
+23	The project helps learners understand loops, variables, input, and basic mathematical operations.	Supported	All these concepts appear directly in the supplied code.
+
+Important limitations identified
+The README's claims are mostly accurate, but the code has some limitations worth distinguishing from documentation errors:
+- Negative inputs: The program returns 1 for a negative integer because the loop does not execute. That is not a mathematically valid factorial result.
+- Non-integer inputs: Inputs such as 2.5 or hello cause int() to raise a ValueError.
+- Repository details: The filename, actual folder structure, and availability of a downloadable or cloneable repository cannot be confirmed from the code alone.
+Final verdict: The core explanations of the program's behavior and learning objectives are supported. The repository structure, filename, and download/clone instructions require independent verification.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Think
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
